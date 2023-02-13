@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  height: auto;
+  background: rgb(138, 57, 25);
+  color: aliceblue;
+  padding: 1% 5%;
+}
+.section1 {
+  text-align: start;
+}
+.section2 {
+  text-align: end;
+}
+.heart {
+  color: red;
+  opacity: 3rem;
+}
+.buttonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  /* flex-wrap: wrap; */
+  justify-items: center;
+}
+.twitter {
+  width: 10%;
+  padding: 0.2rem 1rem;
+  background: skyblue;
+  margin: 0 2%;
+
+  text-align: center;
+}
+.github {
+  width: 10%;
+  padding: 0.2rem 1rem;
+  background: gray;
+  text-align: center;
+}
