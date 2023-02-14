@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import classes from "./Header.module.css";
 import HeaderButton from "./HeaderButton";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment>
       {/* header  */}
@@ -10,7 +10,7 @@ const Header = () => {
         <h1>MetaMeals</h1>
         {/* <button>Cart</button> */}
         {/* using button as a components  */}
-        <HeaderButton />
+        <HeaderButton onClick={props.onClick} />
       </header>
       {/* img  */}
       <div className={classes["main-image"]}>

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Cart from "../../UI/Card/Card";
 import MealItem from "../MealItem/MealItem";
+import MealItemForm from "../MealItemForm/MealItemForm";
 import classes from "./AvailableMeals.module.css";
 const DUMMY_MEALS = [
   {
@@ -36,13 +37,16 @@ const AvailableMeals = () => {
         <ul>
           {DUMMY_MEALS.map((meal) => (
             // <li>{meal.name}</li>
-            <MealItem
-              key={meal.id}
-              meal={meal}
-              name={meal.name}
-              price={meal.price}
-              des={meal.description}
-            />
+            <>
+              <MealItem
+                key={meal.id}
+                id={meal.id}
+                meal={meal}
+                name={meal.name}
+                price={meal.price}
+                des={meal.description}
+              />
+            </>
           ))}
         </ul>
       </Cart>
